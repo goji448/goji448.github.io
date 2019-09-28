@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Goji repository{% endblock %}</title>
-    {% load static %}
+    <meta charset="UTF-8">
+    <title>{% block title %}Rabbit{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}"/>
-
-    {%block links%}{% endblock %}
+            
+            
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>SUUUUU.</p>
-    <p>Hola.</p>
+    <nav class="navbar navbar-dark white">
+        <a class="navbar-brand" >
+            <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo">
+        </a>
+        <button class="btn btn-primary btn-sm my-0" type="button" data-toggle="modal" data-target="#modalRegisterForm">
+            Sign up
+        </button>
+    </nav>
+    
 </body>
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/mdb.min.js' %}"></script>
 </html>
