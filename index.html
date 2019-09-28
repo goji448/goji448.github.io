@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>{% block title %}Goji repository{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}"/>
+
+    {%block links%}{% endblock %}
+</head>
 <body>
-<h1>Hello World</h1>
-<p>SUUUUU.</p>
-<p>Hola.</p>
+    <h1>Hello World</h1>
+    <p>SUUUUU.</p>
+    <p>Hola.</p>
 </body>
 </html>
